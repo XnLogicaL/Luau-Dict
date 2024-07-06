@@ -12,6 +12,6 @@ And those are just the beginning...
 
 ---
 
-**How I pulled of an O(1) length operation on a dictionary?** you may ask, and here's the answer to that question;
+**How did I pull of an O(1) len() operation on a dictionary?**:
 
 - I used a 32 bit buffer that stores the length of the dict in binary, and every time a __newindex operation occurs, it writes to the buffer with the according term.
