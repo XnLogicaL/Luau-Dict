@@ -88,11 +88,12 @@ do -- Dict Metatable
 	end
 
 	function Dict:set(key: any, value: any): ()
-		rawset(self, key, value)
 		local lencache = Internal.__lencache[self]
-		if value ~= nil then
+		local wasnil = self[key] == nil
+		rawset(self, key, value)
+		if value ~= nil and wasnil then
 			lencache.write(0, lencache.read(0) + 1)
-		else
+		elseif value == nil and not wasnil then
 			lencache.write(0, lencache.read(0) - 1)
 		end
 	end
