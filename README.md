@@ -1,4 +1,4 @@
-# Custom Lua Dicts
+# Custom Luau Dicts
 A custom [heavily optimized](BENCHMARKS.md) class for dictionaries with full intellisense support written in luau.
 
 My problem with luau's dictionaries is that they lack capability compared to arrays.
