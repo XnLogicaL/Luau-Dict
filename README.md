@@ -1,5 +1,5 @@
 # Custom Luau Dicts
-A custom [heavily optimized](BENCHMARKS.md) class for dictionaries with full intellisense support written in luau.
+A custom [heavily optimized](BENCHMARKS.md) class for dictionaries with full Intellisense support written in Luau.
 
 My problem with luau's dictionaries is that they lack capability compared to arrays.
 You cannot use the "#" operator on dicts, cannot index using numbers, it's just overall lackluster.
